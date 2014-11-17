@@ -1,9 +1,8 @@
 ---
 layout: post
 title:  "用jekyll搭建个人博客"
-date:   2013-12-11 10:28:58
-categories: jekyll client
-tags: jekyll client 
+categories: misc client
+tags: misc client 
 ---
 
 每天都要学习大量的新知识，但是学的多，忘得也多，之前都是用word来做一些记录，但是不得不说，实在是太烦了，因此萌生了一种写博客的想法，有很多写博客的网站如csdn等。但是总觉得用起来烦，看到别人的博客都是markdown格式来写的，所以翻阅了一些资料，将本博客的搭建过程详细的记录下来作为个人博客的开篇之作。

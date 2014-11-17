@@ -1,0 +1,40 @@
+---
+layout: page
+title: Tags - client
+description: 客户端开发
+theme: red
+---
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+            <section class="tags">
+                <ul class="nav nav-pills">
+                    {% for tag in site.tags %}
+                    <li class="red" style="margin:5px">
+                        <a href="{{ site.url }}/tags/{{ tag | first | slugize }}/"> {{ tag | first }}&nbsp;<span class="badge">{{ tag | last | size}}</span></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-md-12">
+            <section>
+                <h3>client</h3>
+                <ul>
+                    {% for post in site.posts %}
+                        {% for otag in post.tags %}
+                            {% if otag == 'client' %}
+                                <li class="alink"><a href="{{ site.url }}{{ post.url }}" class="red-link">{{ post.title }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}    
+                </ul>
+            </section>
+        </div>
+    </div>
