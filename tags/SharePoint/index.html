@@ -12,7 +12,7 @@ theme: red
                 <ul class="nav nav-pills">
                     {% for tag in site.tags %}
                     <li class="red" style="margin:5px">
-                        <a href="/tags/{{ tag | first | slugize }}/"> {{ tag | first }}&nbsp;<span class="badge">{{ tag | last | size}}</span></a>
+                        <a href="{{ site.url }}/tags/{{ tag | first | slugize }}/"> {{ tag | first }}&nbsp;<span class="badge">{{ tag | last | size}}</span></a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -30,7 +30,7 @@ theme: red
                     {% for post in site.posts %}
                         {% for otag in post.tags %}
                             {% if otag == 'SharePoint' %}
-                                <li class="alink"><a href="{{ post.url }}" class="red-link">{{ post.title }}</a></li>
+                                <li class="alink"><a href="{{ site.url }}{{ post.url }}" class="red-link">{{ post.title }}</a></li>
                             {% endif %}
                         {% endfor %}
                     {% endfor %}    
