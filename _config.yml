@@ -10,7 +10,7 @@ permalink:        /blog/:year/:month/:day/:title
 title:            '闾明的小屋'
 tagline:          'A Metro theme for Jekyll'
 description:      '我的一些生活和工作上的随笔'
-url:              'http://18620385582.github.io/myblog/'
+url:              'http://18620385582.github.io/myblog'
 baseurl:          ''
 
 # Navigation
