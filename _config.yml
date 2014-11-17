@@ -16,13 +16,13 @@ baseurl:          ''
 # Navigation
 navigation:
 - text: About
-  url: /about/
+  url: /myblog/about/
 - text: Blog
-  url: /blog/
+  url: /myblog/blog/
 - text: Tags
-  url: /tags/
+  url: /myblog/tags/
 - text: Archive
-  url : /archive/
+  url : /myblog/archive/
 
 # Author Details
 author:         '闾明'
