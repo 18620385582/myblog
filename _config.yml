@@ -1,1 +1,46 @@
-baseurl: /myblog
+# Configurations
+markdown: kramdown
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+highlighter: pygments
+
+# Permalinks
+permalink:        /blog/:year/:month/:day/:title
+
+# Setup
+title:            '闾明的小屋'
+tagline:          'A Metro theme for Jekyll'
+description:      '我的一些生活和工作上的随笔'
+url:              'http://localhost:4000'
+baseurl:          ''
+
+# Navigation
+navigation:
+- text: About
+  url: /about/
+- text: Blog
+  url: /blog/
+- text: Tags
+  url: /tags/
+- text: Archive
+  url : /archive/
+
+# Author Details
+author:         '闾明'
+# linkedin:       'https://ae.linkedin.com/in/olakara/'
+# twitter:        'https://twitter.com/olakara'
+# facebook:       'https://www.facebook.com/olakara'
+# gplus:          'https://plus.google.com/100425464897246255887/'
+
+# Google Analytics
+gahandler: 'UA-52149651-1'
+
+# Disqus
+# disqushandler: 'testingblogo'
+
+# Blog Configurations
+paginate: 10 # Posts per page on the blog index
+paginate_path: '/blog/page:num'
+destination: ./_site
+
+# Custom vars
+version:          0.7.9
